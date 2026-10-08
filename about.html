@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レジン作成について - RESIN CRAFT SHOP</title>
+    <!-- SNSアイコン表示用 FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 共通CSSの読み込み -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ヘッダー -->
+    <header class="site-header">
+        <div class="logo">
+            <h1><a href="index.html" style="text-decoration: none; color: inherit;">R</a></h1>
+        </div>
+        <div class="shop-title">
+            <h2>Resine craft shop</h2>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="メニュー">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- スライドメニュー -->
+    <nav class="nav-menu" id="navMenu">
+        <div class="menu-content">
+            <h3>内容</h3>
+            <ul>
+                <li><a href="index.html">ホーム（商品一覧）</a></li>
+                <li><a href="about.html">レジン作成について</a></li>
+                <li><a href="reviews.html">口コミ</a></li>
+            </ul>
+            <h3>問い合わせ</h3>
+            
+            <button class="accordion-toggle" id="contactAccordionToggle" type="button">
+                お問合わせはこちらから <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </button>
+
+            <div class="menu-sns accordion-content" id="contactAccordionContent">
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="#" aria-label="LINE"><i class="fa-brands fa-line"></i> LINE</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <section class="page-container">
+            <h2 class="section-title">ABOUT RESIN</h2>
+            <p class="page-subtitle">レジンアクセサリーの魅力とこだわり</p>
+
+            <!-- 記事コンテンツ -->
+            <div class="content-card">
+                <h3>1. レジン（樹脂）とは？</h3>
+                <p>
+                    当ショップで使用している「エポキシ樹脂（2液性レジン）」は、主剤と硬化剤を正確な比率で混ぜ合わせ、時間をかけてじっくりと硬化させる樹脂素材です。
+                    ガラスのように深い透明感と優れた耐久性を持ち、経年劣化による黄変が極めて少ないのが特徴です。
+                    厚みと奥行きのあるリッチな質感で、日常の装いに上質な輝きを添えて長くお楽しみいただけます。
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3>2. 当ショップのこだわり</h3>
+                <p>
+                    ひとつひとつ手作業で気泡を取り除き、透明感と発色の美しさを追求しています。
+                    黄変（経年劣化による変色）が起こりにくく、永く美しい輝きを保ちます。
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3>3. お手入れ・お取り扱い方法</h3>
+                <ul>
+                    <li>直射日光の当たる場所での長時間の保管は避けてください。</li>
+                    <li>汚れがついた場合は、柔らかい布で優しく拭き取ってください。</li>
+                    <li>強い衝撃を与えると破損の原因となりますのでご注意ください。</li>
+                </ul>
+            </div>
+
+            <div class="back-link">
+                <a href="index.html">&larr; トップページ（商品一覧）へ戻る</a>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="#">プライバシーポリシー</a>
+            <a href="#">特定商取引法に基づく表記</a>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; Shop name.</p>
+        </div>
+        <div class="footer-sns">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#" aria-label="LINE"><i class="fa-brands fa-line"></i> LINE</a>
+        </div>
+    </footer>
+
+    <!-- JSの読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>

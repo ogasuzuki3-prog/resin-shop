@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>口コミ一覧 - Resine craft shop</title>
+    <!-- 共通のCSSを読み込み -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ヘッダー（既存のページと同じ構造） -->
+    <header class="site-header">
+        <div class="logo">
+            <h1>R</h1>
+        </div>
+        <div class="shop-title">
+            <h2>Resine craft shop</h2>
+        </div>
+        <button class="menu-toggle" aria-label="メニューを開閉">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- スライドメニュー -->
+    <nav class="nav-menu">
+        <div class="menu-content">
+            <h3>MENU</h3>
+            <ul>
+                <li><a href="index.html">ホーム（商品一覧）</a></li>
+                <li><a href="about.html">レジン作成について</a></li>
+                <li><a href="reviews.html">お客様の口コミ</a></li>
+            </ul>
+            <h3>CONTACT</h3>
+            <button class="accordion-toggle">
+                <span>お問い合わせ・SNS</span>
+                <span class="accordion-icon">▼</span>
+            </button>
+            <div class="accordion-content">
+                <a href="#" target="_blank">💬 LINE公式アカウント</a>
+                <a href="#" target="_blank">📸 Instagram</a>
+                <a href="#" target="_blank">🛒 ネットショップ (minne/Creema等)</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メイン：口コミコンテンツ -->
+    <main class="page-container reviews-page">
+        <h2 class="section-title">REVIEWS</h2>
+        <p class="page-subtitle">お客様からいただいたお声・アンケート結果</p>
+
+        <!-- 評価・満足度サマリー -->
+        <div class="review-summary-card">
+            <div class="summary-score">
+                <span class="score-number">4.8</span>
+                <div class="stars">★★★★★</div>
+                <p class="score-label">平均満足度（Googleフォームアンケートより）</p>
+            </div>
+            <div class="summary-detail">
+                <p>LINEアンケートにて実施した口コミ協力のお声を一部抜粋してご紹介しております。（※プライバシー保護のため匿名掲載）</p>
+            </div>
+        </div>
+
+        <!-- コメント抜粋リスト -->
+        <div class="review-list">
+            
+            <!-- 口コミカード 1 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="reviewer-name">A.K 様（30代女性）</span>
+                    <span class="review-stars">★★★★★</span>
+                </div>
+                <div class="review-item-tag">購入商品：ピアス</div>
+                <p class="review-text">
+                    写真通りの透明感で、実物はさらに可愛かったです！梱包もとても丁寧で、手書きのメッセージまで添えられていて感動しました。また利用したいです。
+                </p>
+            </div>
+
+            <!-- 口コミカード 2 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="reviewer-name">M.S 様（20代女性）</span>
+                    <span class="review-stars">★★★★★</span>
+                </div>
+                <div class="review-item-tag">購入商品：キーホルダー</div>
+                <p class="review-text">
+                    友人の誕生日プレゼントとして購入しました。気泡がほとんどなくすごく綺麗な仕上がりで、友人にもとても喜んでもらえました。
+                </p>
+            </div>
+
+            <!-- 口コミカード 3 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="reviewer-name">Y.T 様（40代女性）</span>
+                    <span class="review-stars">★★★★☆</span>
+                </div>
+                <div class="review-item-tag">購入商品：ネックレス</div>
+                <p class="review-text">
+                    光に当たったときのキラキラ感が綺麗でお気に入りです。着け心地も軽くて普段使いしやすいです。
+                </p>
+            </div>
+
+        </div>
+
+        <!-- ホームに戻るリンク -->
+        <div class="back-link">
+            <a href="index.html">← トップページに戻る</a>
+        </div>
+    </main>
+
+    <!-- フッター -->
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="#">プライバシーポリシー</a>
+            <a href="#">特定商取引法に基づく表記</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Resine craft shop</p>
+    </footer>
+
+    <!-- メニューやアコーディオンを動かすためのJavaScript -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        const accordionToggle = document.querySelector('.accordion-toggle');
+        const accordionContent = document.querySelector('.accordion-content');
+        accordionToggle.addEventListener('click', () => {
+            accordionToggle.classList.toggle('active');
+            accordionContent.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
